@@ -80,7 +80,7 @@
       function render() {
         sw.setAttribute("aria-checked", String(annual));
         Object.keys(plans).forEach(function (k) {
-          var p = plans[k][annual ? 1 : 0]; $("#price-" + k).textContent = "$" + p;
+          var p = plans[k][annual ? 1 : 0]; $("#price-" + k).textContent = p;   // the "$" is already in the markup
           var cta = $("#cta-" + k); cta.href = "/signup.html?plan=" + k + "&billing=" + (annual ? "annual" : "monthly");
         });
         $$("[data-bill]").forEach(function (el) { el.textContent = annual ? "billed annually" : "billed monthly"; });
@@ -99,7 +99,8 @@
         $("#c-out").textContent = "$" + saved.toLocaleString(); $("#c-roi").textContent = saved > cost ? Math.round(saved / cost) + "× return on a Team plan" : "Add more hours or people to see a return";
         if (!used) { used = true; track("calculator_used", { team: +size.value }); }
       }
-      [size, hrs, rate].forEach(function (el) { el.addEventListener("input", calc); }); calc(); used = false;
+      used = true; calc(); used = false;   // the first calculation is just the default values: only count real interaction
+      [size, hrs, rate].forEach(function (el) { el.addEventListener("input", calc); });
     },
 
     blog: function () {

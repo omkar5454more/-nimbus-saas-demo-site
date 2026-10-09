@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Features | Nimbus</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("nimbus_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/css/nimbus.css">
+  <script src="/optimize.config.js"></script>
+  <script src="/optimize-snippet.js"></script>
+</head>
+<body data-page="features">
+  <main id="main">
+    <section class="block" style="padding-bottom:40px"><div class="wrap center"><span class="eyebrow">Features</span><h1 style="font-size:clamp(36px,5vw,58px)" id="features-h1">Everything your team needs to plan, track and deliver</h1><p class="lead" style="margin-inline:auto">Powerful where it matters, simple everywhere else.</p><a class="btn lg" href="/signup.html" id="features-cta">Start free trial</a></div></section>
+
+    <section class="block alt"><div class="wrap tour">
+      <div><span class="eyebrow">Boards</span><h2 class="title" style="font-size:36px">Work the way your team works</h2><p class="muted" style="font-size:18px">Choose kanban, list or calendar. Add the fields you need. Automate the busywork.</p><ul><li>Drag-and-drop columns</li><li>Custom fields and filters</li><li>Rules that move tasks for you</li></ul></div>
+      <img src="/assets/img/tour-board.svg" alt="Board view" width="900" height="560" loading="lazy">
+    </div></section>
+    <section class="block"><div class="wrap tour">
+      <img src="/assets/img/tour-timeline.svg" alt="Timeline view" width="900" height="560" loading="lazy">
+      <div><span class="eyebrow">Timelines</span><h2 class="title" style="font-size:36px">See the whole project at a glance</h2><p class="muted" style="font-size:18px">Dependencies, workload and milestones in one view that updates as work moves.</p><ul><li>Automatic scheduling</li><li>Workload by person</li><li>Baselines to compare plan vs reality</li></ul></div>
+    </div></section>
+
+    <section class="block alt" id="roi">
+      <div class="wrap">
+        <span class="eyebrow">ROI calculator</span><h2 class="title">What could better planning save you?</h2><p class="lead">Move the sliders. (Illustrative maths only.)</p>
+        <div class="calc">
+          <div class="card-form">
+            <div class="field"><label for="c-size">Team size: <b id="v-size"></b> people</label><input id="c-size" type="range" min="3" max="200" value="25"></div>
+            <div class="field"><label for="c-hours">Hours per person per week on status updates and meetings: <b id="v-hours"></b></label><input id="c-hours" type="range" min="1" max="20" value="6"></div>
+            <div class="field" style="margin:0"><label for="c-rate">Average hourly cost: <b id="v-rate"></b></label><input id="c-rate" type="range" min="20" max="200" step="5" value="60"></div>
+          </div>
+          <div class="out"><span>Estimated yearly savings</span><b id="c-out">$0</b><span id="c-roi"></span><p style="margin:22px 0 0"><a class="btn ghost" href="/demo.html" id="roi-cta">Talk to sales</a></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/assets/js/posts.js"></script>
+  <script src="/assets/js/nimbus.js"></script>
+</body>
+</html>

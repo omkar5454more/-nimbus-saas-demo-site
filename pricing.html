@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pricing | Nimbus</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("nimbus_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/css/nimbus.css">
+  <script src="/optimize.config.js"></script>
+  <script src="/optimize-snippet.js"></script>
+</head>
+<body data-page="pricing">
+  <main id="main">
+    <section class="block center" style="padding-bottom:30px">
+      <div class="wrap">
+        <span class="eyebrow">Pricing</span>
+        <h1 style="font-size:clamp(36px,5vw,58px)" id="pricing-title">Simple pricing that scales with your team</h1>
+        <p class="lead" style="margin-inline:auto" id="pricing-sub">Start free. Upgrade when you need more. Cancel any time.</p>
+        <div class="billing"><span>Monthly</span><button class="switch" id="billing-toggle" role="switch" aria-checked="true" aria-label="Annual billing"></button><span>Annual <span class="save">Save 17%</span></span></div>
+      </div>
+    </section>
+    <section class="block" style="padding-top:20px">
+      <div class="wrap">
+        <div class="plans">
+          <div class="plan"><h3>Starter</h3><p class="muted">For individuals and tiny teams.</p><div class="price">$<span id="price-starter">0</span><small> /seat /mo</small></div><span class="muted" style="font-size:14px">free forever</span>
+            <ul><li>Up to 5 people</li><li>3 boards</li><li>Basic reports</li><li>Community support</li></ul>
+            <a class="btn ghost block plan-cta" id="cta-starter" data-plan="starter" href="/signup.html?plan=starter">Start for free</a></div>
+          <div class="plan featured"><span class="badge">MOST POPULAR</span><h3>Team</h3><p class="muted">For teams that ship together.</p><div class="price">$<span id="price-team">10</span><small> /seat /mo</small></div><span class="muted" style="font-size:14px" data-bill>billed annually</span>
+            <ul><li>Unlimited boards</li><li>Timelines and dependencies</li><li>Live reports</li><li>Integrations</li><li>Priority support</li></ul>
+            <a class="btn block plan-cta" id="cta-team" data-plan="team" href="/signup.html?plan=team">Start 14-day trial</a></div>
+          <div class="plan"><h3>Business</h3><p class="muted">For organisations that need control.</p><div class="price">$<span id="price-business">20</span><small> /seat /mo</small></div><span class="muted" style="font-size:14px" data-bill>billed annually</span>
+            <ul><li>Everything in Team</li><li>SSO and audit logs</li><li>Advanced permissions</li><li>Custom roles and fields</li><li>Dedicated success manager</li></ul>
+            <a class="btn ghost block plan-cta" id="cta-business" data-plan="business" href="/signup.html?plan=business">Start 14-day trial</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="block alt"><div class="wrap narrow">
+      <h2 class="title center" style="margin-inline:auto;margin-bottom:34px">Compare plans</h2>
+      <table class="compare"><thead><tr><th></th><th>Starter</th><th>Team</th><th>Business</th></tr></thead><tbody>
+        <tr><td>People</td><td>5</td><td>Unlimited</td><td>Unlimited</td></tr><tr><td>Boards</td><td>3</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>Timelines</td><td>–</td><td>✓</td><td>✓</td></tr><tr><td>Live reports</td><td>Basic</td><td>✓</td><td>✓</td></tr>
+        <tr><td>SSO &amp; audit logs</td><td>–</td><td>–</td><td>✓</td></tr><tr><td>Support</td><td>Community</td><td>Priority</td><td>Dedicated</td></tr></tbody></table>
+      <p class="center muted" style="margin-top:30px">Need something custom? <a href="/demo.html" id="pricing-demo"><b>Talk to us</b></a></p>
+    </div></section>
+  </main>
+  <script src="/assets/js/posts.js"></script>
+  <script src="/assets/js/nimbus.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Start your free trial | Nimbus</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem("nimbus_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="/assets/css/nimbus.css">
+  <script src="/optimize.config.js"></script>
+  <script src="/optimize-snippet.js"></script>
+</head>
+<body data-page="signup">
+  <main id="main">
+    <section class="block" style="padding-top:56px">
+      <div class="wrap narrow">
+        <div class="center" style="margin-bottom:30px"><span class="eyebrow">14-day free trial</span><h1 style="font-size:clamp(30px,4vw,44px)" id="su-title">Create your workspace</h1></div>
+        <div class="card-form">
+          <div class="notice"><b>Demo:</b> no account is created and nothing is sent. Please don't enter real personal details, and there is no password field on purpose.</div>
+          <div class="steps" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+          <form id="signup-form" autocomplete="off">
+            <div class="step" data-step="1">
+              <div class="field"><label for="su-name">Your name</label><input id="su-name" name="name" type="text" required placeholder="Demo Person"></div>
+              <div class="field"><label for="su-email">Work email</label><input id="su-email" name="email" type="email" required placeholder="demo@example.com"></div>
+              <div class="field"><label for="su-size">Team size</label><select id="su-size" name="size" required><option value="1-5">1–5 people</option><option value="6-20" selected>6–20 people</option><option value="21-100">21–100 people</option><option value="100+">100+ people</option></select></div>
+              <button class="btn block" type="button" data-next id="su-next-1">Continue</button>
+            </div>
+            <div class="step" data-step="2" hidden>
+              <div class="radio-cards">
+                <label class="radio-card"><input type="radio" name="plan" value="starter"><span><b>Starter · free</b><small>Up to 5 people, 3 boards</small></span></label>
+                <label class="radio-card"><input type="radio" name="plan" value="team" checked><span><b>Team · $10 /seat /mo</b><small>Timelines, reports, integrations. Most popular</small></span></label>
+                <label class="radio-card"><input type="radio" name="plan" value="business"><span><b>Business · $20 /seat /mo</b><small>SSO, audit logs, advanced permissions</small></span></label>
+              </div>
+              <div style="display:flex;gap:12px;margin-top:22px"><button class="btn ghost" type="button" data-back>Back</button><button class="btn block" type="button" data-next id="su-next-2">Continue</button></div>
+            </div>
+            <div class="step" data-step="3" hidden>
+              <p class="muted" id="su-review" style="font-size:17px;margin-top:0"></p>
+              <div style="display:flex;gap:12px;margin-top:22px"><button class="btn ghost" type="button" data-back>Back</button><button class="btn block" type="submit" id="su-submit">Create my demo workspace</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/assets/js/posts.js"></script>
+  <script src="/assets/js/nimbus.js"></script>
+</body>
+</html>

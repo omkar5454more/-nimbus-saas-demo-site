@@ -9,5 +9,5 @@
  * ---------------------------------------------------------------------------------------------- */
 window.OPTIMIZE_CONFIG = {
   origin: "https://personalization-delta.vercel.app",
-  site: "PASTE_YOUR_SITE_ID_HERE"
+  site: "site_0d308dd0be"
 };
